@@ -4,7 +4,7 @@ const app     = express();
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', (res) => {
+app.get('/', (req, res) => {
 	res.render('circles');
 });
 

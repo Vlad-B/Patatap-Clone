@@ -5,7 +5,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (res) => {
-	res.render('home');
+	res.render('circles');
 });
 
 const PORT = process.env.PORT || 3000;

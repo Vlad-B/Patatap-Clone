@@ -5,120 +5,124 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/stylesheets/circles.css">
+	<script type="text/javascript">
+		alert('Hello, please use the letters on your keyboard to play the sounds!');
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.js"
 		integrity="sha512-ZwRMM/apuAKDgOzzCM37VgAiaXCdI6DPMNAsHOLLH85vD6SAR0ROUb8TxecaMmt4e6KDFB3kpQxSBCMxAt12og=="
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous">
+	</script>
 	<script src="/scripts/paper-full.js"></script>
 	<script type="text/paperscript" canvas="myCanvas">
 
 	var keyData = {
 		q: {
 			color: '#7F46BA',
-			sound: new Howl({src: ['/public/sounds/bubbles.mp3']})
+			sound: new Howl({src: ['/sounds/bubbles.mp3']})
 		},
 		w: {
 			color: '#A20617',
-			sound: new Howl({src: ['/public/sounds/clay.mp3']})
+			sound: new Howl({src: ['/sounds/clay.mp3']})
 		},
 		e: {
 			color: '#177984',
-			sound: new Howl({src: ['/public/sounds/confetti.mp3']})
+			sound: new Howl({src: ['/sounds/confetti.mp3']})
 		},
 		r: {
 			color: '#77399F',
-			sound: new Howl({src: ['/public/sounds/dotted-spiral.mp3']})
+			sound: new Howl({src: ['/sounds/dotted-spiral.mp3']})
 		},	
 		t: {
 			color: '#6F9608',
-			sound: new Howl({src: ['/public/sounds/flash-1.mp3']})
+			sound: new Howl({src: ['/sounds/flash-1.mp3']})
 		},
 		y: {
 			color: '#CC3812',
-			sound: new Howl({src: ['/public/sounds/flash-2.mp3']})
+			sound: new Howl({src: ['/sounds/flash-2.mp3']})
 		},
 		u: {
 			color: '#6006E0',
-			sound: new Howl({src: ['/public/sounds/flash-3.mp3']})
+			sound: new Howl({src: ['/sounds/flash-3.mp3']})
 		},
 		i: {
 			color: '#50EB4E',
-			sound: new Howl({src: ['/public/sounds/glimmer.mp3']})
+			sound: new Howl({src: ['/sounds/glimmer.mp3']})
 		},
 		o: {
 			color: '#97D415',
-			sound: new Howl({src: ['/public/sounds/moon.mp3']})
+			sound: new Howl({src: ['/sounds/moon.mp3']})
 		},
 		p: {
 			color: '#5C1EAA',
-			sound: new Howl({src: ['/public/sounds/pinwheel.mp3']})
+			sound: new Howl({src: ['/sounds/pinwheel.mp3']})
 		},
 		a: {
 			color: '#492D39',
-			sound: new Howl({src: ['/public/sounds/piston-1.mp3']})
+			sound: new Howl({src: ['/sounds/piston-1.mp3']})
 		},
 		s: {
 			color: '#4289EE',
-			sound: new Howl({src: ['/public/sounds/piston-2.mp3']})
+			sound: new Howl({src: ['/sounds/piston-2.mp3']})
 		},
 		d: {
 			color: '#8B3DD2',
-			sound: new Howl({src: ['/public/sounds/piston-3.mp3']})
+			sound: new Howl({src: ['/sounds/piston-3.mp3']})
 		},
 		f: {
 			color: '#8B88E0',
-			sound: new Howl({src: ['/public/sounds/prism-1.mp3']})
+			sound: new Howl({src: ['/sounds/prism-1.mp3']})
 		},
 		g: {
 			color: '#48B243',
-			sound: new Howl({src: ['/public/sounds/prism-2.mp3']})
+			sound: new Howl({src: ['/sounds/prism-2.mp3']})
 		},
 		h: {
 			color: '#AF87DA',
-			sound: new Howl({src: ['/public/sounds/prism-3.mp3']})
+			sound: new Howl({src: ['/sounds/prism-3.mp3']})
 		},
 		j: {
 			color: '#09A147',
-			sound: new Howl({src: ['/public/sounds/splits.mp3']})
+			sound: new Howl({src: ['/sounds/splits.mp3']})
 		},
 		k: {
 			color: '#002780',
-			sound: new Howl({src: ['/public/sounds/squiggle.mp3']})
+			sound: new Howl({src: ['/sounds/squiggle.mp3']})
 		},
 		k: {
 			color: '#5D8A3B',
-			sound: new Howl({src: ['/public/sounds/strike.mp3']})
+			sound: new Howl({src: ['/sounds/strike.mp3']})
 		},
 		l: {
 			color: '#2CCC2C',
-			sound: new Howl({src: ['/public/sounds/suspension.mp3']})
+			sound: new Howl({src: ['/sounds/suspension.mp3']})
 		},
 		z: {
 			color: '#115D35',
-			sound: new Howl({src: ['/public/sounds/timer.mp3']})
+			sound: new Howl({src: ['/sounds/timer.mp3']})
 		},
 		x: {
 			color: '#4BE4AC',
-			sound: new Howl({src: ['/public/sounds/ufo.mp3']})
+			sound: new Howl({src: ['/sounds/ufo.mp3']})
 		},
 		c: {
 			color: '#83EAD7',
-			sound: new Howl({src: ['/public/sounds/veil.mp3']})
+			sound: new Howl({src: ['/sounds/veil.mp3']})
 		},
 		v: {
 			color: '#EA0BA5',
-			sound: new Howl({src: ['/public/sounds/wipe.mp3']})
+			sound: new Howl({src: ['/sounds/wipe.mp3']})
 		},
 		b: {
 			color: '#8D358F',
-			sound: new Howl({src: ['/public/sounds/zig-zag.mp3']})
+			sound: new Howl({src: ['/sounds/zig-zag.mp3']})
 		},
 		n: {
 			color: '#085347',
-			sound: new Howl({src: ['/public/sounds/piston-1.mp3']})
+			sound: new Howl({src: ['/sounds/piston-1.mp3']})
 		},
 		m: {
 			color: '#925215',
-			sound: new Howl({src: ['/public/sounds/clay.mp3']})
+			sound: new Howl({src: ['/sounds/clay.mp3']})
 		}
 
 	}
@@ -145,7 +149,7 @@
 			}
 		}
 	}
-	</script>
+</script>
 	<title>Circles</title>
 </head>
 

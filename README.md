@@ -1,4 +1,6 @@
-# Colour Guessing Game
+# Patatap Clone
+
+
 
 # Live Demo
 
@@ -22,7 +24,7 @@ To see the app in action, please visit [https://floating-sea-61626.herokuapp.com
 	- Node.js
 	- express
 
-- Frameworks
+- Libraries
 	- Paper.js
 
 # Platform
